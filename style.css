@@ -1,0 +1,45 @@
+/* Custom CSS */
+
+
+
+.navbar-brand {
+    
+    background-color: #FBF3E4;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 1000;  /* Apply Archivo font */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes the buttons to the right */
+}
+
+
+
+.nav-item .nav-link {
+    font-family: 'Archivo', sans-serif;
+   /* Set color for the button text */
+    padding: 0; /* Remove default padding */
+    font-weight: 700; 
+}
+body {
+    background-color: #FBF3E4;
+    
+  
+}
+.photo-container {
+    text-align: center;
+ /* Center the image horizontally */
+}
+.animated-photo {
+    padding: 10%;
+    max-width: 50%; /* Scale down the image to fit its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.pop-animation {
+    transform: scale(1.1); /* Scale up the image by 10% */
+}
+
+
