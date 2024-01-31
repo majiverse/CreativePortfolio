@@ -1,9 +1,7 @@
-/* Custom CSS */
-
 
 
 .navbar-brand {
-    
+    margin-top: 20px;
     background-color: #FBF3E4;
     font-weight: bold;
     font-family: 'Archivo', sans-serif;
@@ -11,6 +9,7 @@
 }
 
 .navbar-nav {
+    margin-top: 20px;
     margin-left: auto; /* Pushes the buttons to the right */
 }
 
@@ -24,6 +23,7 @@
 }
 body {
     background-color: #FBF3E4;
+    position: relative;
     
   
 }
@@ -32,14 +32,62 @@ body {
  /* Center the image horizontally */
 }
 .animated-photo {
-    padding: 10%;
-    max-width: 50%; /* Scale down the image to fit its container */
+    max-width: 100%; /* Scale down the image to fit its container */
     height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease-in-out;
+    scale: 50%; /* Add transition for smooth animation */
+    animation: floatAnimation 3s ease infinite;  /* Apply the animation to the element */
 }
 
-.pop-animation {
-    transform: scale(1.1); /* Scale up the image by 10% */
+.bottom-right-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Adjust the width of the button as needed */
+    height: auto; /* Maintain aspect ratio */
+    text-decoration: none; /* Remove default underline on anchor tag */
+    padding: 5px; /* Button padding */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+.bottom-right-image {
+    position: absolute;
+    bottom: 300px;
+    right: 200px;
+    width: 100px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some margin from the bottom */
+    margin-right: 20px;
+    animation: moveRightToLeft 1s ease-in infinite;  /* Add some margin from the right */
 }
 
-
+@keyframes pop {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(-5%); /* Start position: translate the image to the right edge of the viewport */
+    }
+    100% {
+        transform: translateX(10%); /* End position: translate the image to the left edge of the viewport */
+    }
+}
