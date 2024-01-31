@@ -1,5 +1,3 @@
-
-
 .navbar-brand {
     margin-top: 20px;
     font-family: 'Bebas Neue', sans-serif;
@@ -29,16 +27,6 @@ body {
     
   
 }
-.photo-container {
-    text-align: center;
- /* Center the image horizontally */
-}
-.animated-photo {
-    max-width: 100%; /* Scale down the image to fit its container */
-    height: auto; /* Maintain aspect ratio */
-    scale: 50%; /* Add transition for smooth animation */
-    /* Apply the animation to the element */
-}
 
 .bottom-right-button {
     position: fixed;
@@ -62,28 +50,13 @@ body {
     margin-right: 20px;
     animation: moveRightToLeft 1s ease-in infinite;  /* Add some margin from the right */
 }
-
-@keyframes pop {
-    0% {
-        transform: scale(1); /* Normal size */
-    }
-    50% {
-        transform: scale(1.1); /* Scale up */
-    }
-    100% {
-        transform: scale(1); /* Back to normal size */
-    }
+.image-paragraph{
+    padding-left: 10%;
+    font-family: 'Poppins', sans-serif;
 }
-@keyframes floatAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.rightimage{
+
+    margin-top: 0%;
 }
 @keyframes moveRightToLeft {
     0% {
@@ -92,6 +65,14 @@ body {
     100% {
         transform: translateX(10%); /* End position: translate the image to the left edge of the viewport */
     }
+}
+.buttons-container{
+    margin-left: 10%;
+}
+.btn-primary{
+    border-radius: 5px;
+    background-color:#B91646 ;
+    font-family: 'Poppins', sans-serif;
 }
 @keyframes fadeOut {
     from { opacity: 0; }
