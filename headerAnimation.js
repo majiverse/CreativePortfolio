@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Animation for navbar brand
-    const navbarBrand = document.querySelector('.navbar-brand');
+    const navbarBrand = document.getElementById('brandLink')
     navbarBrand.addEventListener('mouseover', function() {
-        this.style.color = '#B91646'; // Change color on hover
+        this.style.color = 'Black'; // Change color on hover
     });
     navbarBrand.addEventListener('mouseout', function() {
-        this.style.color = ''; // Revert to original color on mouseout
+        this.style.color = '#B91646'; // Revert to original color on mouseout
     });
 
     // Animation for navbar links

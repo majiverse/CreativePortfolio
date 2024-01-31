@@ -1,7 +1,7 @@
 .navbar-brand {
     margin-top: 20px;
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100; 
+    font-weight: 10; 
     font-size: 30px;
 }
 
@@ -68,12 +68,22 @@ body {
 }
 .buttons-container{
     margin-left: 10%;
+    padding: auto;
 }
 .btn-primary{
     border-radius: 5px;
     background-color:#B91646 ;
     font-family: 'Poppins', sans-serif;
+    border-color: black;
+    border-width: 3px;
+    transition: background-color 0.3s ease;
+
 }
+.btn-primary:hover{
+   background-color: black;
+   
+}
+
 @keyframes fadeOut {
     from { opacity: 0; }
     to { opacity: 1; }
